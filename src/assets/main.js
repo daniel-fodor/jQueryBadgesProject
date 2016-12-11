@@ -1,7 +1,7 @@
 $(function() {
 
   // your code will go here
-  jQuery.ajax {
+  $.ajax({
     url: "https://www.codeschool.com/users/2436579.json",
     dataType: 'jsonp',
     success: function(response) {
@@ -25,5 +25,5 @@ $(function() {
         $("#badges").append(div);
       }
     }
-  }
+  });
 });
