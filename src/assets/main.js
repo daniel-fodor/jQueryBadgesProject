@@ -13,7 +13,7 @@ $(function() {
 
         var h3 = $("<h3 />").text(courses[i].title);
         var img = $("<img />").text(courses[i].badge);
-        var button = $("<a />",{
+        var button = $("<a />", {
           href: courses[i].href,
           target: "_blank",
           class: "btn, btn-primary"
