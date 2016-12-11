@@ -11,17 +11,17 @@ $(function() {
           class: 'course'
         });
 
-        var h3 = $("<h3 />").text(courses.title);
-        var img = $("<img />").text(courses.badge);
+        var h3 = $("<h3 />").text(courses[i].title);
+        var img = $("<img />").text(courses[i].badge);
         var button = $("<a />",{
-          href: courses.href,
+          href: courses[i].href,
           target: "_blank",
           class: "btn, btn-primary"
         }).text("See Course");
 
-        $(div).append(h3);
-        $(div).append(img);
-        $(div).append(button);
+        div.append(h3);
+        div.append(img);
+        div.append(button);
         $("#badges").append(div);
       }
     }
