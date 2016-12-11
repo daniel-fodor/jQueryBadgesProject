@@ -16,7 +16,7 @@ $(function() {
           src: courses[i].badge
         });
         var button = $("<a />", {
-          href: courses[i].href,
+          href: courses[i].url,
           target: "_blank",
           class: "btn, btn-primary"
         }).text("See Course");
